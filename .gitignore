@@ -1,8 +1,31 @@
+# Python
 __pycache__/
+*.py[cod]
 *.pyc
+*.pyo
+*.pyd
+.Python
 .env
 .venv/
-*.log
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Data & logs
 data/raw/images/
+logs/
+*.log
+
+# dbt
 medical_warehouse/target/
-.ruff_cache/
+medical_warehouse/.dbt/
+
+# Editor & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary
+*.bak
+*.swp
+*~
