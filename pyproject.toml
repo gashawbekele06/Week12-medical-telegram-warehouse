@@ -3,22 +3,22 @@ name = "week12-medical-telegram-warehouse"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.12,<3.13"
 dependencies = [
-    "dagster>=1.12.14",
-    "dagster-webserver>=1.12.14",
-    "dbt-postgres>=1.10.0",
-    "fastapi>=0.128.8",
-    "pandas>=2.3.3",
-    "psycopg2-binary>=2.9.11",
-    "pydantic>=2.12.5",
-    "python-dotenv>=1.2.1",
-    "sqlalchemy>=2.0.46",
-    "streamlit>=1.54.0",
-    "telethon>=1.42.0",
-    "tqdm>=4.67.3",
-    "ultralytics>=8.4.14",
-    "uvicorn[standard]>=0.40.0",
+    "dagster>=1.6,<1.8",
+    "dagster-webserver>=1.6,<1.8",
+    "dbt-postgres",
+    "fastapi>=0.110,<1.0",
+    "pandas>=2.2,<2.3",
+    "psycopg2-binary>=2.9,<3.0",
+    "pydantic>=2.5,<2.7",
+    "python-dotenv>=1.0,<2.0",
+    "sqlalchemy>=2.0,<2.1",
+    "streamlit>=1.31,<1.36",
+    "telethon>=1.33,<2.0",
+    "tqdm>=4.66,<5.0",
+    "ultralytics>=8.0,<8.2",
+    "uvicorn[standard]>=0.29,<0.30",
 ]
 
 [dependency-groups]
@@ -31,3 +31,6 @@ dev = [
     "types-psycopg2>=2.9.21.20251012",
     "types-requests>=2.32.4.20260107",
 ]
+
+[tool.uv]
+environments = ["python_full_version >= '3.12' and sys_platform == 'linux'"]
