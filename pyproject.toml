@@ -16,9 +16,11 @@ dependencies = [
     "sqlalchemy>=2.0,<2.1",
     "streamlit>=1.31,<1.36",
     "telethon>=1.33,<2.0",
+    "torch>=2.10.0",
     "tqdm>=4.66,<5.0",
     "ultralytics>=8.0,<8.2",
     "uvicorn[standard]>=0.29,<0.30",
+    "yolov8>=0.0.2",
 ]
 
 [dependency-groups]
