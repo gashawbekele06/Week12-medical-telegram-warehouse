@@ -65,7 +65,6 @@ CREATE TABLE IF NOT EXISTS raw.telegram_messages (
 """
 
 # ─── LOAD ONE FILE ──────────────────────────────────────────────────────────────
-
 def load_file(file_path: Path, conn) -> int:
     inserted = 0
     batch: List[Tuple] = []
