@@ -4,6 +4,7 @@ SELECT
     m.message_id,
     c.channel_key,
     d.date_key,
+    m.message_timestamp,
     m.message_text,
     m.message_length,
     m.view_count,

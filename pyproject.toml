@@ -18,7 +18,7 @@ dependencies = [
     "telethon>=1.33,<2.0",
     "torch>=2.10.0",
     "tqdm>=4.66,<5.0",
-    "ultralytics>=8.0,<8.2",
+    "ultralytics>=8.3,<9.0",
     "uvicorn[standard]>=0.29,<0.30",
     "yolov8>=0.0.2",
 ]
