@@ -232,17 +232,47 @@ For more details on test coverage and results, see the [Interim 2 Progress Repor
 
 ---
 
-## 🚢 Deployment (Docker)
+## 🚢 Deployment
 
+### 1. Local Production (Docker)
+The easiest way to run the entire stack (DB, API, and Dashboard) is using Docker:
 ```bash
-# Build and launch complete stack
 docker-compose up -d --build
 ```
-Includes: PostgreSQL 16, FastAPI, and Streamlit.
+- **Dashboard**: `http://localhost:8501`
+- **API**: `http://localhost:8000`
+- **Database**: `localhost:5432`
+
+### 2. Live Deployment (Streamlit Cloud)
+To fix the "Connection Refused" error on Streamlit Cloud:
+1. **Deploy the API**: Host the FastAPI server on a public platform (e.g., Render, Railway, or AWS).
+2. **Configure Secrets**: In your Streamlit Cloud settings (Advanced > Secrets), add the public URL of your API:
+   ```toml
+   API_URL = "https://your-public-api-url.com"
+   ```
 
 ---
 
-## � Contact
+## 🛠️ Troubleshooting
+
+### "Address already in use" (Port 8000/8501)
+If you see an error saying the port is already in use, find and kill the process:
+```bash
+# Find the PID
+sudo lsof -i :8000
+# Kill the process
+kill -9 <PID>
+```
+
+### Docker Pull Access Denied
+If `docker-compose` fails to pull the `uv` image, ensure you are using the official GHCR path in your `Dockerfile`:
+```dockerfile
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /usr/local/bin/
+```
+
+---
+
+## 👥 Contact
 
 **Gashaw Bekele**  
 - GitHub: [@gashawbekele06](https://github.com/gashawbekele06)
