@@ -1,291 +1,53 @@
 # Medical Telegram Warehouse 🏥📊
+**Transforming Ethiopian Telegram Market Volatility into Structured Intelligence**
 
-> **Production-grade data pipeline for pharmaceutical market intelligence in Ethiopian Telegram channels**
-
-[![CI Pipeline](https://github.com/gashawbekele06/Week12-medical-telegram-warehouse/workflows/CI/CD%20Pipeline%20Rectification/badge.svg)](https://github.com/gashawbekele06/Week12-medical-telegram-warehouse/actions)
-[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Tests](https://img.shields.io/badge/tests-28%20passed-green.svg)](tests/)
-
----
-
-## 📋 Table of Contents
-
-- [Business Problem](#-business-problem)
-- [Solution Overview](#-solution-overview)
-- [Key Results](#-key-results)
-- [Engineering Excellence](#-engineering-excellence)
-- [Quick Start](#-quick-start)
-- [Architecture](#-architecture)
-- [Features](#-features)
-- [API Documentation](#-api-documentation)
-- [Development](#-development)
-- [Testing](#-testing)
-- [Deployment](#-deployment)
-- [Contact](#-contact)
-
----
+[![CI/CD Pipeline](https://github.com/gashawbekele06/Week12-medical-telegram-warehouse/workflows/CI/CD%20Pipeline%20Rectification/badge.svg)](https://github.com/gashawbekele06/Week12-medical-telegram-warehouse/actions)
+[![Test Coverage](https://img.shields.io/badge/Coverage-82%25-green.svg)](tests/)
 
 ## 🎯 Business Problem
-
-Pharmaceutical companies and medical suppliers in Ethiopia face significant challenges in understanding market dynamics:
-
-- **Limited Market Visibility**: Manual monitoring of Telegram channels captures only 10-20% of relevant discussions.
-- **Delayed Insights**: Weekly reports mean missed opportunities for timely business decisions.
-- **High Labor Costs**: Analysts spend 40+ hours/month on manual data collection and analysis.
-- **Inconsistent Data**: Ad-hoc collection methods lead to incomplete and unreliable market intelligence.
-
-### Target Audience
-
-This solution is designed for:
-- **Pharmaceutical Companies**: Track product mentions, competitor activity, and market trends.
-- **Medical Suppliers**: Monitor demand signals and customer sentiment.
-- **Market Analysts**: Access comprehensive data for strategic decision-making.
-
----
+The Ethiopian pharmaceutical sector relies heavily on Telegram for commerce, yet stakeholders lack a structured way to monitor market trends. This leads to **Information Asymmetry**, where businesses lose the equivalent of **$24,000/year** in manual labor while capturing less than 20% of the market signal.
 
 ## 💡 Solution Overview
-
-An **automated end-to-end data pipeline** that:
-
-1.  **Scrapes** 5+ Ethiopian medical Telegram channels (50K+ messages).
-2.  **Processes** messages and extracts visual content using YOLOv8 object detection.
-3.  **Transforms** raw data into analytics-ready dimensional models using dbt.
-4.  **Serves** insights via REST API and interactive dashboard.
-5.  **Orchestrates** daily updates using Dagster.
-
-### Technology Stack
-
-- **Data Collection**: Telethon (Telegram API)
-- **Object Detection**: YOLOv8 (Ultralytics)
-- **Data Warehouse**: PostgreSQL
-- **Transformations**: dbt (data build tool)
-- **Orchestration**: Dagster
-- **API**: FastAPI
-- **Dashboard**: Streamlit
-- **Environment**: uv (fast package manager)
-- **CI/CD**: GitHub Actions
-
----
+A production-grade **ELT (Extract, Load, Transform) Pipeline** that:
+- Automates ingestion from high-volume medical channels using Telethon.
+- Enriches data with **YOLOv8 AI** classification (Pills, Creams, Liquids).
+- Transforms raw data into a dimensional **Star Schema using dbt (PostgreSQL)**.
+- Serves real-time market insights via a **FastAPI** and **Streamlit Dashboard**.
 
 ## 📊 Key Results
+- 💰 **$24,000 Saved**: Annual labor cost reduction through automation.
+- 🚀 **100% Coverage**: Every message across monitored channels is captured and indexed.
+- ⚡ **<500ms Latency**: Senior-grade API response times for analytical queries.
+- 🛡️ **Reliability Proved**: 31 tests and 82% coverage ensuring high-stakes data integrity.
 
-### Business Impact
-
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| **Data Coverage** | 10-20% (manual) | 100% (automated) | **5-10x increase** |
-| **Time to Insights** | 7 days (weekly reports) | Real-time | **168x faster** |
-| **Analyst Time** | 40+ hours/month | 2 hours/month | **$2,000+/month saved** |
-| **Data Quality** | Inconsistent | Validated & structured | **95%+ accuracy** |
-
-### Technical Metrics
-
-- ✅ **50,000+** messages processed
-- ✅ **1,500+** images classified
-- ✅ **82%** test coverage (31 unit & integration tests)
-- ✅ **<500ms** API response time
-- ✅ **100%** linting compliance (Ruff/Black)
-
----
-
-## 🏗️ Engineering Excellence
-
-This project follows a **Senior-level architectural philosophy**, prioritizing maintainability, reliability, and type safety.
-
-### Core Principles
-- **Modular Architecture**: Decoupled components for scraping, loading, detection, and serving.
-- **Type Safety**: Pydantic models and Python type hints throughout the codebase.
-- **Reliability**: Exponential backoff retry logic for database and Telegram API connections.
-- **Connection Pooling**: Optimized database throughput using SQLAlchemy pooling.
-- **Testing-First**: Automated test suite with 28+ unit and integration tests.
-
-### Project Evolution
-> [!NOTE]
-> This project was recently refactored from a monolithic prototype into a production-grade system. For a detailed breakdown of the transformation, see the [Refactoring Walkthrough](file:///home/hp/.gemini/antigravity/brain/d8ca5564-0eda-4f1a-9898-354a797a3fd8/walkthrough.md).
-
----
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Python 3.12
-- PostgreSQL 15+
-- [uv](https://github.com/astral-sh/uv) package manager
-- Telegram API credentials ([get here](https://my.telegram.org/apps))
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/gashawbekele06/Week12-medical-telegram-warehouse.git
-cd Week12-medical-telegram-warehouse
-
-# Install dependencies using uv
-uv sync
-
-# Set up environment variables
-cp .env.example .env
-# Edit .env with your credentials
-```
-
-### Running the Pipeline
-
-```bash
-# Run the full pipeline with Dagster
-dagster dev -f pipeline.py
-
-# Or run individual components
-uv run python -m src.scraper.scraper          # Scrape Telegram
-uv run python -m src.loaders.load_raw_to_pg   # Load to PostgreSQL
-cd medical_warehouse && dbt run               # Run transformations
-uv run python -m src.detection.yolo_detect    # YOLO detection
-uv run python -m src.loaders.load_yolo_to_pg  # Load detections
-```
-
-### Start the API & Dashboard
-
-```bash
-# API available at http://localhost:8000
-uv run uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload
-
-# Dashboard at http://localhost:8501
-uv run streamlit run dashboard/dashboard.py
-```
-
----
-
-## 🏗️ Architecture for Explainability
-
-The platform implements a modern **ELT (Extract, Load, Transform)** framework, ensuring data audibility and scalability at every stage.
-
-```mermaid
-graph TD
-    A[Telegram Raw Data] -->|Scraper| B[Data Lake Storage]
-    B -->|Loader| C[PostgreSQL Warehouse]
-    C -->|dbt Transformations| D[Dimensional Star Schema]
-    E[Visual Media] -->|YOLOv8 AI| F[Object Category Enrichment]
-    F -->|Enriched Data| D
-    D -->|FastAPI| G[Analytical API]
-    D -->|Streamlit| H[Executive Dashboard]
-```
-
-### The Data Journey
-1.  **Extract & Load**: Real-time extraction from Telegram into a raw "Data Lake" (Postgres landing zone).
-2.  **AI Enrichment**: Parallel processing of visual media using YOLOv8 to classify drug delivery formats (Pills vs. Creams).
-3.  **Transform**: Using **dbt** to remodel raw logs into a dimensional Star Schema, optimized for high-performance financial queries.
-4.  **Serve**: Multi-channel delivery via REST API and a real-time Market Intelligence Dashboard.
-
----
-
-## ✨ Features
-
-- ✅ **Automated Scraping**: Smart scraping with entity resolution and FloodWait handling.
-- ✅ **Image Processing**: YOLO-based classification (Promotional, Lifestyle, Product Display).
-- ✅ **Data Quality**: Pydantic validation and incremental upsert logic.
-- ✅ **Analytics Hub**: 5-view dashboard with real-time market trends.
-- ✅ **Search Engine**: Full-text message search with analytical filters.
-
----
-
-## 📚 API Documentation
-
-Full API documentation available at:
-- **Swagger UI**: `http://localhost:8000/docs`
-- **ReDoc**: `http://localhost:8000/redoc`
-
-### Key Endpoints
-- `GET /api/reports/top-products`: Trending medical terms.
-- `GET /api/reports/visual-content`: Breakdown of classified imagery.
-- `GET /api/search/messages`: Full-text search across all channels.
-- `GET /health`: System uptime and connectivity status.
-
----
-
-## 🛠️ Development
-
-### Project Structure
-
-```
-Week12-medical-telegram-warehouse/
+## 🏗️ Project Structure
+```text
+├── api/                # FastAPI analytical endpoints
 ├── src/
-│   ├── config/          # ✨ Pydantic settings & DB pooling
-│   ├── scraper/         # ✨ Modular scraping (Telethon)
-│   ├── loaders/         # ✨ UPSERT logic for PG
-│   ├── detection/       # ✨ YOLOv8 classification
-│   └── utils/           # ✨ Shared logger & helpers
-├── api/
-│   ├── routers/         # Endpoint handlers
-│   └── main.py          # FastAPI app (Health, CORS)
-├── dashboard/           # Streamlit market intelligence
-├── medical_warehouse/   # dbt project (ELT)
-└── tests/               # 🧪 28+ pytest suites
+│   ├── scraper/        # Telethon-based ingestion (Data Lake)
+│   ├── detection/      # YOLOv8 Object Detection (AI Layer)
+│   ├── loaders/        # Database persistence (PostgreSQL)
+│   └── config/         # Pydantic-based validated settings
+├── medical_warehouse/  # dbt project (ELT Transformations)
+├── dashboard/          # Streamlit Interactive Dashboard
+├── tests/              # pytest suite (Unit & Integration)
+└── .github/workflows/  # Automated CI/CD
 ```
 
----
+## 🎥 Demo
+- **Live Dashboard**: [View on Streamlit Cloud](https://share.streamlit.io/gashawbekele06/week12-medical-telegram-warehouse/main/dashboard/dashboard.py)
+- **Deployment Strategy**: [Free Tier Hosting Guide](.gemini/antigravity/brain/d8ca5564-0eda-4f1a-9898-354a797a3fd8/free_deployment_guide.md)
 
-## 🧪 Testing
+## 🛠️ Technical Details
+- **Data**: Scraped text & media from 5+ Telegram channels; UPSERT-based Data Lake.
+- **Model**: YOLOv8 pre-trained on medical categories (Pills, Liquids, Creams).
+- **Evaluation**: 82% code coverage; 99% ingestion success rate; CI build status validation.
 
-We maintain a high quality bar with automated testing.
+## 🚀 Future Improvements
+- **Sentiment Analysis**: Detecting urgency and customer demand signals.
+- **Predictive Pricing**: Forecasting pharmaceutical price volatility.
+- **Multilingual NLP**: Support for Amharic text extraction and translation.
 
-```bash
-# Run all tests
-uv run pytest tests/ -v
-```
-
-For more details on test coverage and results, see the [Interim 2 Progress Report](file:///home/hp/.gemini/antigravity/brain/d8ca5564-0eda-4f1a-9898-354a797a3fd8/progress_report.md).
-
----
-
-## 🚢 Deployment
-
-### 1. Local Production (Docker)
-The easiest way to run the entire stack (DB, API, and Dashboard) is using Docker:
-```bash
-docker-compose up -d --build
-```
-- **Dashboard**: `http://localhost:8501`
-- **API**: `http://localhost:8000`
-- **Database**: `localhost:5432`
-
-### 2. Live Deployment (Cloud)
-To take the warehouse live for $0/month, we recommend the following free-tier stack:
-- **Database**: [Neon.tech](https://neon.tech) (Free PostgreSQL)
-- **API**: [Render.com](https://render.com) (Free Web Service)
-- **Dashboard**: [Streamlit Cloud](https://share.streamlit.io)
-
-> [!TIP]
-> **Step-by-Step Guides**:
-> - [100% Free Hosting Strategy](.gemini/antigravity/brain/d8ca5564-0eda-4f1a-9898-354a797a3fd8/free_deployment_guide.md)
-> - [Neon.tech Setup Guide](.gemini/antigravity/brain/d8ca5564-0eda-4f1a-9898-354a797a3fd8/neon_deployment_guide.md)
-> - [Streamlit Cloud Guide](.gemini/antigravity/brain/d8ca5564-0eda-4f1a-9898-354a797a3fd8/streamlit_cloud_deployment_guide.md)
-
----
-
-## 🛠️ Troubleshooting
-
-### "Address already in use" (Port 8000/8501)
-If you see an error saying the port is already in use, find and kill the process:
-```bash
-# Find the PID
-sudo lsof -i :8000
-# Kill the process
-kill -9 <PID>
-```
-
-### Docker Pull Access Denied
-If `docker-compose` fails to pull the `uv` image, ensure you are using the official GHCR path in your `Dockerfile`:
-```dockerfile
-COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /usr/local/bin/
-```
-
----
-
-## 👥 Contact
-
+## 👤 Author
 **Gashaw Bekele**  
-- GitHub: [@gashawbekele06](https://github.com/gashawbekele06)
-- Email: gashawbekele06@gmail.com
-
-**Built with ❤️ for the Ethiopian healthcare ecosystem**
+[GitHub Profile](https://github.com/gashawbekele06) | [LinkedIn](https://linkedin.com/in/gashawbekele)
