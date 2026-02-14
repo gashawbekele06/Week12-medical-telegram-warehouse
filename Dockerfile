@@ -2,7 +2,7 @@
 FROM python:3.12-slim AS builder
 
 # Install uv
-COPY --from=astral-sh/setup-uv:latest /setup-uv /usr/local/bin/
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /usr/local/bin/
 
 WORKDIR /app
 
