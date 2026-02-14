@@ -1,13 +1,7 @@
-# Medical Telegram Warehouse 🏥📊
+# Medical Telegram Warehouse 📊
 **Transforming Ethiopian Telegram Market Volatility into Structured Intelligence**
 
-[![CI/CD Pipeline](https://github.com/gashawbekele06/Week12-medical-telegram-warehouse/workflows/CI/CD%20Pipeline%20Rectification/badge.svg)](https://github.com/gashawbekele06/Week12-medical-telegram-warehouse/actions)
-[![Test Coverage](https://img.shields.io/badge/Coverage-82%25-green.svg)](tests/)
-[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)
-
----
-
-## � Business Context
+## 📊 Business Context
 Developed at **Kara Solutions**, a leading data science consultancy in Ethiopia, this platform is designed to provide actionable market intelligence for the pharmaceutical sector. By automating the extraction and analysis of data from public Telegram channels, it helps stakeholders navigate market volatility and information asymmetry.
 
 ## 🎯 Key Business Questions
@@ -32,7 +26,7 @@ A production-grade **ELT (Extract, Load, Transform) Pipeline** orchestrated with
 
 ---
 
-## 🏗️ Architecture for Explainability
+## Architecture for Explainability
 
 The platform implements a modern **ELT (Extract, Load, Transform)** framework, ensuring data audibility and scalability at every stage.
 
@@ -45,11 +39,6 @@ graph TD
     F -->|Enriched Data| D
     D -->|FastAPI| G[Analytical API]
     D -->|Streamlit| H[Executive Dashboard]
-    I[Dagster Orchestrator] --- A
-    I --- B
-    I --- C
-    I --- D
-    I --- F
 ```
 
 ### The Data Journey
@@ -60,7 +49,7 @@ graph TD
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Python 3.12
@@ -106,7 +95,7 @@ uv run streamlit run dashboard/dashboard.py
 
 ---
 
-## ✨ Features
+## Features
 - ✅ **Automated Scraping**: Smart scraping with entity resolution and FloodWait handling using Telethon.
 - ✅ **Object Detection**: YOLOv8-based classification of medical products in images.
 - ✅ **ELT with dbt**: Clean, versioned transformations into a dimensional star schema.
@@ -117,7 +106,7 @@ uv run streamlit run dashboard/dashboard.py
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 ```text
 ├── .github/workflows/  # Automated CI/CD (GitHub Actions)
 ├── api/                # FastAPI analytical backend
@@ -177,4 +166,4 @@ Ensure you have set the `API_URL` secret in your environment to point to your li
 **Gashaw Bekele**  
 [GitHub](https://github.com/gashawbekele06) | [LinkedIn](https://linkedin.com/in/gashawbekele)
 
-**Built with ❤️ for the Ethiopian healthcare ecosystem.**
+**Built with for the Ethiopian healthcare ecosystem.**
