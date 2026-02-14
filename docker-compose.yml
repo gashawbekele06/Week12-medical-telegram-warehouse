@@ -27,5 +27,17 @@ services:
       - "8000:8000"
     restart: unless-stopped
 
+  dashboard:
+    build: .
+    container_name: medical_dashboard
+    depends_on:
+      - api
+    environment:
+      - API_URL=http://api:8000
+    ports:
+      - "8501:8501"
+    command: [ "streamlit", "run", "dashboard/dashboard.py", "--server.address", "0.0.0.0" ]
+    restart: unless-stopped
+
 volumes:
   postgres_data:
