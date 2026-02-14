@@ -1,22 +1,33 @@
 """
-Dagster Pipeline – Medical Telegram Warehouse
-Full end-to-end job: scrape → load raw → dbt build → yolo detection → load detections
+Updated pipeline with refactored modules.
 """
 
 import subprocess
-import os
 from pathlib import Path
+from typing import List
+
 from dagster import (
     job, op, schedule, repository, RunConfig, DefaultScheduleStatus,
-    AssetIn, asset, define_asset_job, AssetSelection
+    get_dagster_logger
 )
-from dagster import get_dagster_logger
 
 logger = get_dagster_logger()
 
-# ─── HELPER ─────────────────────────────────────────────────────────────────────
-def run_command(cmd: list[str], cwd: str | Path | None = None):
-    """Run shell command and raise on non-zero exit"""
+
+def run_command(cmd: List[str], cwd: str | Path | None = None) -> subprocess.CompletedProcess:
+    """
+    Run shell command and raise on non-zero exit.
+    
+    Args:
+        cmd: Command and arguments as list
+        cwd: Working directory
+        
+    Returns:
+        CompletedProcess instance
+        
+    Raises:
+        RuntimeError: If command fails
+    """
     logger.info(f"Running: {' '.join(cmd)}")
     result = subprocess.run(
         cmd,
@@ -31,47 +42,57 @@ def run_command(cmd: list[str], cwd: str | Path | None = None):
         raise RuntimeError(f"Command failed (exit {result.returncode}):\n{result.stderr}")
     return result
 
-# ─── OPS / ASSETS ───────────────────────────────────────────────────────────────
 
 @op
-def scrape_telegram_data():
-    run_command(["uv", "run", "python", "src/scraper.py"])
+def scrape_telegram_data() -> str:
+    """Scrape Telegram channels for messages and media."""
+    run_command(["uv", "run", "python", "-m", "src.scraper.scraper"])
     return "scraped"
 
-@op
-def load_raw_to_postgres(scrape_result):
-    run_command(["uv", "run", "python", "src/load_raw_to_pg.py"])
-    return "loaded"
 
 @op
-def run_dbt_transformations(load_result):
+def load_raw_to_postgres(scrape_result: str) -> str:
+    """Load raw messages to PostgreSQL."""
+    run_command(["uv", "run", "python", "-m", "src.loaders.load_raw_to_pg"])
+    return "loaded"
+
+
+@op
+def run_dbt_transformations(load_result: str) -> str:
+    """Run dbt transformations."""
     run_command(
         ["dbt", "run", "--full-refresh"],
         cwd="medical_warehouse"
     )
     return "transformed"
 
+
 @op
-def run_yolo_detection(transform_result):
-    run_command(["uv", "run", "python", "src/yolo_detect.py"])
+def run_yolo_detection(transform_result: str) -> str:
+    """Run YOLO object detection on images."""
+    run_command(["uv", "run", "python", "-m", "src.detection.yolo_detect"])
     return "detected"
 
+
 @op
-def load_yolo_detections(detection_result):
-    run_command(["uv", "run", "python", "src/load_yolo_to_pg.py"])
+def load_yolo_detections(detection_result: str) -> str:
+    """Load YOLO detection results to PostgreSQL."""
+    run_command(["uv", "run", "python", "-m", "src.loaders.load_yolo_to_pg"])
     return "complete"
 
-# ─── JOB ────────────────────────────────────────────────────────────────────────
 
 @job
 def full_medical_pipeline():
+    """
+    Full end-to-end pipeline:
+    scrape → load raw → dbt build → yolo detection → load detections
+    """
     scrape_result = scrape_telegram_data()
     load_result = load_raw_to_postgres(scrape_result)
     transform_result = run_dbt_transformations(load_result)
     detection_result = run_yolo_detection(transform_result)
     load_yolo_detections(detection_result)
 
-# ─── SCHEDULE ───────────────────────────────────────────────────────────────────
 
 @schedule(
     cron_schedule="0 2 * * *",  # every day at 02:00
@@ -79,13 +100,14 @@ def full_medical_pipeline():
     execution_timezone="Africa/Addis_Ababa",
     default_status=DefaultScheduleStatus.STOPPED  # start manually first
 )
-def daily_pipeline_schedule():
+def daily_pipeline_schedule() -> RunConfig:
+    """Daily pipeline schedule."""
     return RunConfig()
 
-# ─── REPOSITORY ─────────────────────────────────────────────────────────────────
 
 @repository
 def medical_warehouse_repo():
+    """Dagster repository definition."""
     return [
         full_medical_pipeline,
         daily_pipeline_schedule
