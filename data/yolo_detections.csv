@@ -1,0 +1,315 @@
+image_path,message_id,channel,detected_objects,confidence_scores,image_category
+images/tikvahpharma/190538.jpg,190538,tikvahpharma,scissors;scissors;scissors,0.907;0.627;0.558,product_display
+images/tikvahpharma/190534.jpg,190534,tikvahpharma,tv,0.250,product_display
+images/tikvahpharma/190643.jpg,190643,tikvahpharma,scissors;scissors;scissors,0.907;0.627;0.558,product_display
+images/tikvahpharma/190642.jpg,190642,tikvahpharma,,,other
+images/tikvahpharma/190711.jpg,190711,tikvahpharma,bottle;refrigerator,0.941;0.536,product_display
+images/tikvahpharma/190531.jpg,190531,tikvahpharma,bird,0.541,other
+images/tikvahpharma/190681.jpg,190681,tikvahpharma,person,0.450,lifestyle
+images/tikvahpharma/190695.jpg,190695,tikvahpharma,bird,0.541,other
+images/tikvahpharma/190537.jpg,190537,tikvahpharma,,,other
+images/tikvahpharma/190669.jpg,190669,tikvahpharma,,,other
+images/tikvahpharma/190564.jpg,190564,tikvahpharma,,,other
+images/tikvahpharma/190600.jpg,190600,tikvahpharma,bird,0.541,other
+images/tikvahpharma/190680.jpg,190680,tikvahpharma,tv;person,0.333;0.292,promotional
+images/tikvahpharma/190641.jpg,190641,tikvahpharma,,,other
+images/CheMed123/79.jpg,79,CheMed123,,,other
+images/CheMed123/44.jpg,44,CheMed123,cell phone;person,0.939;0.848,promotional
+images/CheMed123/17.jpg,17,CheMed123,bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle,0.526;0.495;0.432;0.387;0.385;0.380;0.375;0.326;0.285;0.279;0.272,product_display
+images/CheMed123/60.jpg,60,CheMed123,,,other
+images/CheMed123/49.jpg,49,CheMed123,kite;kite;kite;frisbee,0.680;0.403;0.345;0.325,other
+images/CheMed123/39.jpg,39,CheMed123,mouse;mouse;mouse;mouse;mouse;mouse;mouse;mouse,0.911;0.902;0.893;0.624;0.594;0.555;0.526;0.414,product_display
+images/CheMed123/23.jpg,23,CheMed123,cell phone,0.611,product_display
+images/CheMed123/11.jpg,11,CheMed123,clock,0.427,other
+images/CheMed123/30.jpg,30,CheMed123,person,0.414,lifestyle
+images/CheMed123/43.jpg,43,CheMed123,person;chair,0.856;0.294,lifestyle
+images/CheMed123/55.jpg,55,CheMed123,stop sign,0.307,other
+images/CheMed123/22.jpg,22,CheMed123,stop sign,0.278,other
+images/CheMed123/27.jpg,27,CheMed123,,,other
+images/CheMed123/53.jpg,53,CheMed123,person,0.574,lifestyle
+images/CheMed123/3.jpg,3,CheMed123,,,other
+images/CheMed123/21.jpg,21,CheMed123,bird,0.253,other
+images/CheMed123/9.jpg,9,CheMed123,bottle,0.387,product_display
+images/CheMed123/19.jpg,19,CheMed123,person;person;dining table;dining table,0.940;0.928;0.362;0.322,lifestyle
+images/CheMed123/2.jpg,2,CheMed123,bottle,0.387,product_display
+images/CheMed123/15.jpg,15,CheMed123,,,other
+images/CheMed123/85.jpg,85,CheMed123,,,other
+images/CheMed123/26.jpg,26,CheMed123,person;cup;book;book,0.828;0.427;0.318;0.313,promotional
+images/CheMed123/82.jpg,82,CheMed123,bottle;bottle;bottle;apple,0.899;0.842;0.740;0.478,product_display
+images/CheMed123/81.jpg,81,CheMed123,bottle;bottle;bottle;bottle;bottle,0.882;0.833;0.822;0.804;0.762,product_display
+images/CheMed123/46.jpg,46,CheMed123,person;person;tv,0.827;0.475;0.389,promotional
+images/CheMed123/75.jpg,75,CheMed123,person,0.835,lifestyle
+images/CheMed123/95.jpg,95,CheMed123,person;person,0.868;0.492,lifestyle
+images/CheMed123/77.jpg,77,CheMed123,bottle;bottle;bottle;bottle,0.956;0.907;0.896;0.894,product_display
+images/CheMed123/45.jpg,45,CheMed123,scissors,0.632,product_display
+images/CheMed123/33.jpg,33,CheMed123,orange;orange;book,0.671;0.576;0.272,product_display
+images/CheMed123/88.jpg,88,CheMed123,,,other
+images/CheMed123/74.jpg,74,CheMed123,,,other
+images/CheMed123/32.jpg,32,CheMed123,person,0.588,lifestyle
+images/CheMed123/97.jpg,97,CheMed123,,,other
+images/CheMed123/96.jpg,96,CheMed123,cup,0.326,product_display
+images/CheMed123/91.jpg,91,CheMed123,,,other
+images/CheMed123/18.jpg,18,CheMed123,,,other
+images/CheMed123/48.jpg,48,CheMed123,,,other
+images/CheMed123/94.jpg,94,CheMed123,cup;person;cup,0.741;0.476;0.386,promotional
+images/CheMed123/10.jpg,10,CheMed123,,,other
+images/CheMed123/13.jpg,13,CheMed123,hot dog;donut;hot dog;donut;hot dog;hot dog,0.504;0.399;0.310;0.297;0.264;0.250,other
+images/CheMed123/38.jpg,38,CheMed123,,,other
+images/CheMed123/64.jpg,64,CheMed123,person;person;banana;remote,0.686;0.440;0.281;0.256,promotional
+images/CheMed123/76.jpg,76,CheMed123,person;chair;chair,0.869;0.272;0.252,lifestyle
+images/CheMed123/40.jpg,40,CheMed123,person;person;person;person;person;person;person;person;person;person,0.719;0.674;0.634;0.598;0.587;0.513;0.452;0.437;0.332;0.331,lifestyle
+images/CheMed123/87.jpg,87,CheMed123,parking meter,0.279,other
+images/CheMed123/25.jpg,25,CheMed123,cell phone;person,0.861;0.628,promotional
+images/CheMed123/90.jpg,90,CheMed123,book,0.308,product_display
+images/CheMed123/34.jpg,34,CheMed123,,,other
+images/CheMed123/78.jpg,78,CheMed123,person;person,0.770;0.356,lifestyle
+images/CheMed123/56.jpg,56,CheMed123,person,0.833,lifestyle
+images/CheMed123/31.jpg,31,CheMed123,bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle,0.513;0.497;0.435;0.388;0.388;0.383;0.377;0.333;0.279;0.276;0.274,product_display
+images/CheMed123/14.jpg,14,CheMed123,,,other
+images/CheMed123/58.jpg,58,CheMed123,bottle,0.412,product_display
+images/CheMed123/50.jpg,50,CheMed123,cake,0.292,other
+images/CheMed123/67.jpg,67,CheMed123,stop sign;book,0.579;0.284,product_display
+images/CheMed123/70.jpg,70,CheMed123,potted plant;person;book,0.925;0.844;0.423,promotional
+images/CheMed123/52.jpg,52,CheMed123,person;person;horse;person;person;person,0.704;0.646;0.625;0.513;0.431;0.335,lifestyle
+images/CheMed123/41.jpg,41,CheMed123,person,0.421,lifestyle
+images/CheMed123/92.jpg,92,CheMed123,,,other
+images/CheMed123/80.jpg,80,CheMed123,person;bottle;chair,0.928;0.743;0.564,promotional
+images/CheMed123/59.jpg,59,CheMed123,bottle,0.287,product_display
+images/CheMed123/71.jpg,71,CheMed123,person;person,0.884;0.804,lifestyle
+images/CheMed123/29.jpg,29,CheMed123,person;surfboard;person;person,0.619;0.594;0.528;0.278,lifestyle
+images/CheMed123/86.jpg,86,CheMed123,person;refrigerator,0.901;0.357,promotional
+images/CheMed123/93.jpg,93,CheMed123,person,0.908,lifestyle
+images/CheMed123/20.jpg,20,CheMed123,person;person;dining table;dining table,0.940;0.928;0.362;0.322,lifestyle
+images/ethiopharmaceutical/2442.jpg,2442,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2460.jpg,2460,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2436.jpg,2436,ethiopharmaceutical,person,0.475,lifestyle
+images/ethiopharmaceutical/2401.jpg,2401,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2414.jpg,2414,ethiopharmaceutical,keyboard;banana;carrot;banana,0.493;0.417;0.416;0.264,product_display
+images/ethiopharmaceutical/2449.jpg,2449,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2441.jpg,2441,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2407.jpg,2407,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2440.jpg,2440,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2462.jpg,2462,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2451.jpg,2451,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2445.jpg,2445,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2485.jpg,2485,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2433.jpg,2433,ethiopharmaceutical,person,0.376,lifestyle
+images/ethiopharmaceutical/2397.jpg,2397,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2435.jpg,2435,ethiopharmaceutical,person;person,0.438;0.266,lifestyle
+images/ethiopharmaceutical/2443.jpg,2443,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2481.jpg,2481,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2415.jpg,2415,ethiopharmaceutical,book;book;kite,0.604;0.460;0.340,product_display
+images/ethiopharmaceutical/2459.jpg,2459,ethiopharmaceutical,book;book,0.318;0.287,product_display
+images/ethiopharmaceutical/2450.jpg,2450,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2478.jpg,2478,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2491.jpg,2491,ethiopharmaceutical,laptop;tv;keyboard;laptop,0.701;0.639;0.509;0.435,product_display
+images/ethiopharmaceutical/2480.jpg,2480,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2486.jpg,2486,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2483.jpg,2483,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2452.jpg,2452,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2444.jpg,2444,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2492.jpg,2492,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2448.jpg,2448,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2490.jpg,2490,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2420.jpg,2420,ethiopharmaceutical,toilet,0.330,other
+images/ethiopharmaceutical/2488.jpg,2488,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2487.jpg,2487,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2461.jpg,2461,ethiopharmaceutical,,,other
+images/ethiopharmaceutical/2392.jpg,2392,ethiopharmaceutical,,,other
+images/yenehealth/2871.jpg,2871,yenehealth,bottle;stop sign;book;book,0.750;0.649;0.594;0.319,product_display
+images/yenehealth/2989.jpg,2989,yenehealth,airplane,0.369,other
+images/yenehealth/2939.jpg,2939,yenehealth,person,0.510,lifestyle
+images/yenehealth/2898.jpg,2898,yenehealth,book;book;book;book;book;book;book;book,0.712;0.473;0.415;0.399;0.397;0.373;0.364;0.258,product_display
+images/yenehealth/2952.jpg,2952,yenehealth,bottle,0.920,product_display
+images/yenehealth/2951.jpg,2951,yenehealth,kite,0.327,other
+images/yenehealth/2866.jpg,2866,yenehealth,donut;orange,0.264;0.264,other
+images/yenehealth/2954.jpg,2954,yenehealth,bottle;person;cup;backpack;handbag,0.668;0.569;0.540;0.332;0.297,promotional
+images/yenehealth/2984.jpg,2984,yenehealth,,,other
+images/yenehealth/2960.jpg,2960,yenehealth,banana,0.252,other
+images/yenehealth/2974.jpg,2974,yenehealth,bottle,0.769,product_display
+images/yenehealth/2977.jpg,2977,yenehealth,bottle,0.899,product_display
+images/yenehealth/2981.jpg,2981,yenehealth,,,other
+images/yenehealth/2991.jpg,2991,yenehealth,airplane,0.353,other
+images/yenehealth/2947.jpg,2947,yenehealth,person;person;person;person;tie;tie;book,0.888;0.884;0.864;0.746;0.613;0.580;0.324,promotional
+images/yenehealth/2967.jpg,2967,yenehealth,remote;person,0.818;0.338,promotional
+images/yenehealth/2927.jpg,2927,yenehealth,,,other
+images/yenehealth/3000.jpg,3000,yenehealth,person,0.892,lifestyle
+images/yenehealth/2994.jpg,2994,yenehealth,cell phone,0.448,product_display
+images/yenehealth/3004.jpg,3004,yenehealth,,,other
+images/yenehealth/2961.jpg,2961,yenehealth,,,other
+images/yenehealth/2983.jpg,2983,yenehealth,,,other
+images/yenehealth/2908.jpg,2908,yenehealth,kite,0.282,other
+images/yenehealth/2975.jpg,2975,yenehealth,bottle,0.702,product_display
+images/yenehealth/2937.jpg,2937,yenehealth,person,0.508,lifestyle
+images/yenehealth/2889.jpg,2889,yenehealth,kite,0.285,other
+images/yenehealth/2972.jpg,2972,yenehealth,,,other
+images/yenehealth/2964.jpg,2964,yenehealth,person,0.886,lifestyle
+images/yenehealth/2965.jpg,2965,yenehealth,person;chair,0.935;0.341,lifestyle
+images/yenehealth/2963.jpg,2963,yenehealth,person;refrigerator;backpack,0.803;0.287;0.254,promotional
+images/yenehealth/2990.jpg,2990,yenehealth,airplane,0.326,other
+images/yenehealth/2971.jpg,2971,yenehealth,,,other
+images/yenehealth/2895.jpg,2895,yenehealth,book,0.705,product_display
+images/yenehealth/2907.jpg,2907,yenehealth,airplane,0.339,other
+images/yenehealth/2946.jpg,2946,yenehealth,person;person;tie;book,0.861;0.851;0.770;0.373,promotional
+images/yenehealth/2881.jpg,2881,yenehealth,cell phone,0.763,product_display
+images/yenehealth/2928.jpg,2928,yenehealth,sports ball;person;sports ball,0.814;0.623;0.429,lifestyle
+images/yenehealth/2896.jpg,2896,yenehealth,,,other
+images/yenehealth/2970.jpg,2970,yenehealth,frisbee;kite,0.416;0.406,other
+images/yenehealth/2872.jpg,2872,yenehealth,stop sign;bottle,0.659;0.412,product_display
+images/yenehealth/2968.jpg,2968,yenehealth,person;backpack;handbag,0.605;0.352;0.321,lifestyle
+images/yenehealth/2934.jpg,2934,yenehealth,bottle;bottle;bottle;person;refrigerator;backpack,0.858;0.839;0.777;0.577;0.402;0.359,promotional
+images/yenehealth/2877.jpg,2877,yenehealth,,,other
+images/yenehealth/2925.jpg,2925,yenehealth,orange,0.272,other
+images/yenehealth/2885.jpg,2885,yenehealth,,,other
+images/yenehealth/2985.jpg,2985,yenehealth,,,other
+images/yenehealth/2926.jpg,2926,yenehealth,apple;kite,0.754;0.257,other
+images/yenehealth/2976.jpg,2976,yenehealth,,,other
+images/yenehealth/2873.jpg,2873,yenehealth,bottle;bottle;stop sign;bottle,0.936;0.888;0.857;0.770,product_display
+images/yenehealth/2894.jpg,2894,yenehealth,person,0.571,lifestyle
+images/yenehealth/2980.jpg,2980,yenehealth,bottle;person;backpack,0.665;0.633;0.367,promotional
+images/yenehealth/2988.jpg,2988,yenehealth,person,0.924,lifestyle
+images/yenehealth/2973.jpg,2973,yenehealth,cell phone;kite,0.414;0.305,product_display
+images/yenehealth/2886.jpg,2886,yenehealth,person,0.959,lifestyle
+images/yenehealth/2950.jpg,2950,yenehealth,kite,0.272,other
+images/yenehealth/2868.jpg,2868,yenehealth,person;motorcycle;backpack,0.797;0.441;0.354,lifestyle
+images/yenehealth/2933.jpg,2933,yenehealth,bottle,0.838,product_display
+images/yenehealth/2879.jpg,2879,yenehealth,,,other
+images/yenehealth/2906.jpg,2906,yenehealth,airplane,0.277,other
+images/yenehealth/2940.jpg,2940,yenehealth,person;cell phone;person;person,0.449;0.426;0.356;0.261,promotional
+images/yenehealth/2878.jpg,2878,yenehealth,person;sports ball,0.521;0.481,lifestyle
+images/yenehealth/2874.jpg,2874,yenehealth,person;bottle;backpack;bottle;motorcycle,0.807;0.379;0.346;0.294;0.253,promotional
+images/yenehealth/2938.jpg,2938,yenehealth,person,0.355,lifestyle
+images/yenehealth/2893.jpg,2893,yenehealth,,,other
+images/yenehealth/2887.jpg,2887,yenehealth,,,other
+images/yenehealth/2897.jpg,2897,yenehealth,kite,0.255,other
+images/yenehealth/2966.jpg,2966,yenehealth,,,other
+images/yenehealth/2910.jpg,2910,yenehealth,kite,0.580,other
+images/yenehealth/2880.jpg,2880,yenehealth,,,other
+images/yenehealth/2899.jpg,2899,yenehealth,,,other
+images/yenehealth/2953.jpg,2953,yenehealth,,,other
+images/yenehealth/2962.jpg,2962,yenehealth,cup,0.292,product_display
+images/yenehealth/2936.jpg,2936,yenehealth,person,0.592,lifestyle
+images/yenehealth/2867.jpg,2867,yenehealth,kite,0.530,other
+images/yenehealth/2870.jpg,2870,yenehealth,person,0.854,lifestyle
+images/yenehealth/2884.jpg,2884,yenehealth,traffic light,0.497,other
+images/yenehealth/2979.jpg,2979,yenehealth,,,other
+images/yenehealth/3001.jpg,3001,yenehealth,kite,0.580,other
+images/yenehealth/2892.jpg,2892,yenehealth,person,0.385,lifestyle
+images/yenehealth/2944.jpg,2944,yenehealth,person;person;chair;tie;dining table,0.914;0.755;0.586;0.513;0.364,lifestyle
+images/yenehealth/2888.jpg,2888,yenehealth,person;backpack,0.803;0.399,lifestyle
+images/yenehealth/2959.jpg,2959,yenehealth,,,other
+images/yenehealth/2993.jpg,2993,yenehealth,airplane,0.329,other
+images/yenehealth/2903.jpg,2903,yenehealth,kite,0.589,other
+images/yenehealth/2909.jpg,2909,yenehealth,person;backpack;motorcycle,0.792;0.353;0.307,lifestyle
+images/yenehealth/2930.jpg,2930,yenehealth,person;bottle;bottle;bottle,0.942;0.787;0.711;0.711,promotional
+images/yenehealth/2978.jpg,2978,yenehealth,,,other
+images/yenehealth/2982.jpg,2982,yenehealth,,,other
+images/yenehealth/2948.jpg,2948,yenehealth,bottle;bottle;person;person;person;person;person;person;person;tie;person;person;person;person;tv;person;tie,0.882;0.859;0.835;0.818;0.814;0.801;0.785;0.785;0.777;0.767;0.757;0.626;0.618;0.446;0.300;0.293;0.292,promotional
+images/yenehealth/2945.jpg,2945,yenehealth,person;person;tie;book;book,0.890;0.875;0.784;0.330;0.255,promotional
+images/yenehealth/2931.jpg,2931,yenehealth,bottle,0.573,product_display
+images/yenehealth/2992.jpg,2992,yenehealth,airplane,0.332,other
+images/yenehealth/2932.jpg,2932,yenehealth,bottle,0.826,product_display
+images/lobelia4cosmetics/23475.jpg,23475,lobelia4cosmetics,bottle;bottle;bottle;refrigerator;bottle;orange;bottle;bottle;bottle,0.638;0.409;0.366;0.328;0.320;0.300;0.266;0.265;0.261,product_display
+images/lobelia4cosmetics/23396.jpg,23396,lobelia4cosmetics,bottle;bottle,0.895;0.396,product_display
+images/lobelia4cosmetics/23461.jpg,23461,lobelia4cosmetics,bottle;dining table,0.870;0.388,product_display
+images/lobelia4cosmetics/23457.jpg,23457,lobelia4cosmetics,hot dog;hot dog;hot dog;hot dog,0.586;0.557;0.266;0.251,other
+images/lobelia4cosmetics/23403.jpg,23403,lobelia4cosmetics,cell phone,0.463,product_display
+images/lobelia4cosmetics/23463.jpg,23463,lobelia4cosmetics,bottle,0.655,product_display
+images/lobelia4cosmetics/23460.jpg,23460,lobelia4cosmetics,bottle;refrigerator;bottle,0.326;0.310;0.303,product_display
+images/lobelia4cosmetics/23416.jpg,23416,lobelia4cosmetics,bottle,0.928,product_display
+images/lobelia4cosmetics/23444.jpg,23444,lobelia4cosmetics,bottle;dining table;orange,0.727;0.455;0.311,product_display
+images/lobelia4cosmetics/23439.jpg,23439,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23456.jpg,23456,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23393.jpg,23393,lobelia4cosmetics,bottle;cup,0.822;0.259,product_display
+images/lobelia4cosmetics/23434.jpg,23434,lobelia4cosmetics,bottle;dining table,0.484;0.295,product_display
+images/lobelia4cosmetics/23440.jpg,23440,lobelia4cosmetics,bottle,0.820,product_display
+images/lobelia4cosmetics/23414.jpg,23414,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23436.jpg,23436,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23429.jpg,23429,lobelia4cosmetics,bottle,0.869,product_display
+images/lobelia4cosmetics/23480.jpg,23480,lobelia4cosmetics,suitcase,0.322,other
+images/lobelia4cosmetics/23453.jpg,23453,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23454.jpg,23454,lobelia4cosmetics,person;person;person;person;bottle;person,0.837;0.805;0.640;0.415;0.404;0.344,promotional
+images/lobelia4cosmetics/23451.jpg,23451,lobelia4cosmetics,bottle,0.422,product_display
+images/lobelia4cosmetics/23469.jpg,23469,lobelia4cosmetics,bottle;bottle,0.942;0.271,product_display
+images/lobelia4cosmetics/23470.jpg,23470,lobelia4cosmetics,bottle,0.831,product_display
+images/lobelia4cosmetics/23458.jpg,23458,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23378.jpg,23378,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23464.jpg,23464,lobelia4cosmetics,bottle,0.947,product_display
+images/lobelia4cosmetics/23385.jpg,23385,lobelia4cosmetics,bottle,0.831,product_display
+images/lobelia4cosmetics/23415.jpg,23415,lobelia4cosmetics,orange;orange;apple;cup,0.690;0.598;0.342;0.272,product_display
+images/lobelia4cosmetics/23471.jpg,23471,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23407.jpg,23407,lobelia4cosmetics,bottle,0.502,product_display
+images/lobelia4cosmetics/23472.jpg,23472,lobelia4cosmetics,teddy bear,0.318,product_display
+images/lobelia4cosmetics/23384.jpg,23384,lobelia4cosmetics,person;person,0.435;0.268,lifestyle
+images/lobelia4cosmetics/23386.jpg,23386,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23402.jpg,23402,lobelia4cosmetics,bottle,0.869,product_display
+images/lobelia4cosmetics/23481.jpg,23481,lobelia4cosmetics,oven,0.253,product_display
+images/lobelia4cosmetics/23422.jpg,23422,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23395.jpg,23395,lobelia4cosmetics,bottle;bottle,0.320;0.298,product_display
+images/lobelia4cosmetics/23401.jpg,23401,lobelia4cosmetics,bottle;bottle,0.916;0.819,product_display
+images/lobelia4cosmetics/23468.jpg,23468,lobelia4cosmetics,bottle;bottle;bottle,0.511;0.291;0.290,product_display
+images/lobelia4cosmetics/23449.jpg,23449,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23387.jpg,23387,lobelia4cosmetics,teddy bear,0.318,product_display
+images/lobelia4cosmetics/23427.jpg,23427,lobelia4cosmetics,bottle,0.907,product_display
+images/lobelia4cosmetics/23465.jpg,23465,lobelia4cosmetics,bottle;bottle,0.850;0.252,product_display
+images/lobelia4cosmetics/23443.jpg,23443,lobelia4cosmetics,bottle;bottle,0.926;0.296,product_display
+images/lobelia4cosmetics/23399.jpg,23399,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23479.jpg,23479,lobelia4cosmetics,bottle;bottle;bottle;bottle;bottle;bottle,0.855;0.798;0.776;0.670;0.624;0.570,product_display
+images/lobelia4cosmetics/23397.jpg,23397,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23473.jpg,23473,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23478.jpg,23478,lobelia4cosmetics,bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle;bottle,0.655;0.638;0.619;0.608;0.605;0.593;0.588;0.569;0.568;0.562;0.537;0.520;0.505;0.491;0.490;0.490;0.486;0.442;0.439;0.389;0.340;0.324;0.315;0.297;0.285,product_display
+images/lobelia4cosmetics/23441.jpg,23441,lobelia4cosmetics,bottle,0.808,product_display
+images/lobelia4cosmetics/23409.jpg,23409,lobelia4cosmetics,bottle,0.831,product_display
+images/lobelia4cosmetics/23377.jpg,23377,lobelia4cosmetics,bottle;bottle,0.353;0.302,product_display
+images/lobelia4cosmetics/23442.jpg,23442,lobelia4cosmetics,bottle;bottle;bottle;refrigerator;bottle;orange;bottle;bottle;bottle,0.638;0.409;0.366;0.328;0.320;0.300;0.266;0.265;0.261,product_display
+images/lobelia4cosmetics/23446.jpg,23446,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23477.jpg,23477,lobelia4cosmetics,clock,0.361,other
+images/lobelia4cosmetics/23419.jpg,23419,lobelia4cosmetics,bottle;dining table;orange,0.727;0.455;0.311,product_display
+images/lobelia4cosmetics/23394.jpg,23394,lobelia4cosmetics,bottle,0.531,product_display
+images/lobelia4cosmetics/23380.jpg,23380,lobelia4cosmetics,bottle;dining table,0.870;0.388,product_display
+images/lobelia4cosmetics/23474.jpg,23474,lobelia4cosmetics,bottle,0.808,product_display
+images/lobelia4cosmetics/23467.jpg,23467,lobelia4cosmetics,bottle,0.951,product_display
+images/lobelia4cosmetics/23428.jpg,23428,lobelia4cosmetics,book;bottle,0.350;0.263,product_display
+images/lobelia4cosmetics/23418.jpg,23418,lobelia4cosmetics,bottle;bottle,0.926;0.296,product_display
+images/lobelia4cosmetics/23426.jpg,23426,lobelia4cosmetics,bottle;bottle;bottle;bottle;bottle,0.736;0.436;0.428;0.415;0.380,product_display
+images/lobelia4cosmetics/23423.jpg,23423,lobelia4cosmetics,bottle;bottle,0.941;0.406,product_display
+images/lobelia4cosmetics/23424.jpg,23424,lobelia4cosmetics,bottle;bottle,0.954;0.347,product_display
+images/lobelia4cosmetics/23433.jpg,23433,lobelia4cosmetics,bottle,0.870,product_display
+images/lobelia4cosmetics/23420.jpg,23420,lobelia4cosmetics,bottle;apple;apple,0.422;0.309;0.282,product_display
+images/lobelia4cosmetics/23417.jpg,23417,lobelia4cosmetics,bottle;bottle;bottle;refrigerator;bottle;orange;bottle;bottle;bottle,0.638;0.409;0.366;0.328;0.320;0.300;0.266;0.265;0.261,product_display
+images/lobelia4cosmetics/23404.jpg,23404,lobelia4cosmetics,cake,0.549,other
+images/lobelia4cosmetics/23430.jpg,23430,lobelia4cosmetics,cell phone,0.463,product_display
+images/lobelia4cosmetics/23379.jpg,23379,lobelia4cosmetics,bottle;refrigerator;bottle,0.326;0.310;0.303,product_display
+images/lobelia4cosmetics/23462.jpg,23462,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23437.jpg,23437,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23447.jpg,23447,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23405.jpg,23405,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23383.jpg,23383,lobelia4cosmetics,bottle,0.820,product_display
+images/lobelia4cosmetics/23389.jpg,23389,lobelia4cosmetics,bottle,0.808,product_display
+images/lobelia4cosmetics/23412.jpg,23412,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23445.jpg,23445,lobelia4cosmetics,bottle;apple;apple,0.422;0.309;0.282,product_display
+images/lobelia4cosmetics/23432.jpg,23432,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23459.jpg,23459,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23390.jpg,23390,lobelia4cosmetics,bottle,0.314,product_display
+images/lobelia4cosmetics/23455.jpg,23455,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23392.jpg,23392,lobelia4cosmetics,bottle,0.854,product_display
+images/lobelia4cosmetics/23391.jpg,23391,lobelia4cosmetics,bottle;cup;dining table,0.572;0.418;0.309,product_display
+images/lobelia4cosmetics/23413.jpg,23413,lobelia4cosmetics,bottle,0.808,product_display
+images/lobelia4cosmetics/23425.jpg,23425,lobelia4cosmetics,bottle,0.842,product_display
+images/lobelia4cosmetics/23398.jpg,23398,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23406.jpg,23406,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23410.jpg,23410,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23452.jpg,23452,lobelia4cosmetics,bottle,0.928,product_display
+images/lobelia4cosmetics/23408.jpg,23408,lobelia4cosmetics,bottle;dining table,0.484;0.295,product_display
+images/lobelia4cosmetics/23435.jpg,23435,lobelia4cosmetics,bottle,0.747,product_display
+images/lobelia4cosmetics/23450.jpg,23450,lobelia4cosmetics,bottle,0.502,product_display
+images/lobelia4cosmetics/23476.jpg,23476,lobelia4cosmetics,bottle,0.869,product_display
+images/lobelia4cosmetics/23466.jpg,23466,lobelia4cosmetics,bottle,0.699,product_display
+images/lobelia4cosmetics/23438.jpg,23438,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23431.jpg,23431,lobelia4cosmetics,bottle;cup,0.599;0.354,product_display
+images/lobelia4cosmetics/23388.jpg,23388,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23381.jpg,23381,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23411.jpg,23411,lobelia4cosmetics,teddy bear,0.318,product_display
+images/lobelia4cosmetics/23400.jpg,23400,lobelia4cosmetics,person;person,0.597;0.325,lifestyle
+images/lobelia4cosmetics/23448.jpg,23448,lobelia4cosmetics,,,other
+images/lobelia4cosmetics/23421.jpg,23421,lobelia4cosmetics,,,other
