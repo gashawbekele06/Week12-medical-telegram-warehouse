@@ -156,20 +156,26 @@ uv run streamlit run dashboard/dashboard.py
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ Architecture for Explainability
+
+The platform implements a modern **ELT (Extract, Load, Transform)** framework, ensuring data audibility and scalability at every stage.
 
 ```mermaid
 graph TD
-    A[Telegram Channels] -->|Telethon| B[PostgreSQL Raw]
-    B -->|dbt Transformations| C[PostgreSQL Marts]
-    D[Images] -->|YOLOv8| E[Image Classification]
-    E -->|Detection Results| C
-    C -->|FastAPI| F[REST API]
-    C -->|Streamlit| G[Interactive Dashboard]
-    H[Dagster] -->|Orchestration| A
-    H -->|Orchestration| B
-    H -->|Orchestration| E
+    A[Telegram Raw Data] -->|Scraper| B[Data Lake Storage]
+    B -->|Loader| C[PostgreSQL Warehouse]
+    C -->|dbt Transformations| D[Dimensional Star Schema]
+    E[Visual Media] -->|YOLOv8 AI| F[Object Category Enrichment]
+    F -->|Enriched Data| D
+    D -->|FastAPI| G[Analytical API]
+    D -->|Streamlit| H[Executive Dashboard]
 ```
+
+### The Data Journey
+1.  **Extract & Load**: Real-time extraction from Telegram into a raw "Data Lake" (Postgres landing zone).
+2.  **AI Enrichment**: Parallel processing of visual media using YOLOv8 to classify drug delivery formats (Pills vs. Creams).
+3.  **Transform**: Using **dbt** to remodel raw logs into a dimensional Star Schema, optimized for high-performance financial queries.
+4.  **Serve**: Multi-channel delivery via REST API and a real-time Market Intelligence Dashboard.
 
 ---
 
@@ -243,13 +249,17 @@ docker-compose up -d --build
 - **API**: `http://localhost:8000`
 - **Database**: `localhost:5432`
 
-### 2. Live Deployment (Streamlit Cloud)
-To fix the "Connection Refused" error on Streamlit Cloud:
-1. **Deploy the API**: Host the FastAPI server on a public platform (e.g., Render, Railway, or AWS).
-2. **Configure Secrets**: In your Streamlit Cloud settings (Advanced > Secrets), add the public URL of your API:
-   ```toml
-   API_URL = "https://your-public-api-url.com"
-   ```
+### 2. Live Deployment (Cloud)
+To take the warehouse live for $0/month, we recommend the following free-tier stack:
+- **Database**: [Neon.tech](https://neon.tech) (Free PostgreSQL)
+- **API**: [Render.com](https://render.com) (Free Web Service)
+- **Dashboard**: [Streamlit Cloud](https://share.streamlit.io)
+
+> [!TIP]
+> **Step-by-Step Guides**:
+> - [100% Free Hosting Strategy](.gemini/antigravity/brain/d8ca5564-0eda-4f1a-9898-354a797a3fd8/free_deployment_guide.md)
+> - [Neon.tech Setup Guide](.gemini/antigravity/brain/d8ca5564-0eda-4f1a-9898-354a797a3fd8/neon_deployment_guide.md)
+> - [Streamlit Cloud Guide](.gemini/antigravity/brain/d8ca5564-0eda-4f1a-9898-354a797a3fd8/streamlit_cloud_deployment_guide.md)
 
 ---
 
